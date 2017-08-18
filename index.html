@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Carrie Clark</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="flexboxgrid/css/flexboxgrid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- 
+    Here's what I'm planning to add: a fixed navbar with links aligned to the right (flexbox using <ul><li> and
+        flex-end, like this example: https://codepen.io/chriscoyier/pen/FAbpm); I can do that with flexbox alone. 
+        In addition, I want a central column of content, which is best done using flexgrid -- also, consider
+        learning how to use column offset for horizontal centering, rather than blank grid cells. That should be
+        it for the structure of the layout -- the rest is styling and transition animations.  
+-->
+
+<div class="flex-container">
+    <div class="gradient"></div>
+</div>
+
+<nav class="flex-container">
+    <div class="nav-btn">
+        <h2><a href="#">ABOUT</a></h2>
+    </div>
+    <div class="nav-btn">
+        <h2><a href="#">WORK</a></h2>
+    </div>
+    <div class="nav-btn">
+        <h2><a href="#">CONTACT</a></h2>
+    </div>
+    <div class="nav-btn display-off">
+        <!--This is for spacing purposes-->
+    </div>
+</nav>
+
+<main>
+
+    <div class="row 
+                col-md-offset-2 col-md-8 col-md-offset-2 
+                col-sm-offset-1 col-sm-10 col-sm-offset-1 
+                col-xs-12 
+                xs-padding">
+        <h1 class="heading-full-width">ABOUT</h1>
+        <p>This is a small paragraph.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce iaculis lacus sit amet varius imperdiet. Etiam efficitur auctor tellus, sed posuere erat dictum eget. Donec faucibus purus sit amet sapien imperdiet condimentum nec in justo. Praesent tristique porttitor accumsan. Proin mattis, tellus non bibendum suscipit, lacus ipsum sollicitudin nisl, commodo venenatis lorem lectus eget nunc. Ut et felis vel dolor euismod convallis a sit amet augue. Nullam at interdum tellus. Vestibulum eu aliquet erat. Nunc tristique massa eget tincidunt ornare. Nullam a mi egestas arcu molestie hendrerit sed vestibulum lacus. Etiam dictum lobortis leo, eget mollis libero feugiat quis. Proin aliquet augue sed nisi auctor, sit amet ornare purus dignissim. Nulla rutrum tincidunt elit, eget viverra elit auctor in.</p>
+    </div>
+
+</main>
+
+</body>
+
+</html>

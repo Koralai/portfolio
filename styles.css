@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+p {
+    color: #222;
+    font-size: 18px;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h1 {
+    line-height:50%;
+    color:#ff8c00;
+}
+
+a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-style: double;
+}
+
+p {
+    line-height:150%;
+    font-weight: 300;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.gradient {
+    background: #ffff66; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, deeppink , yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, deeppink, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, deeppink, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right,deeppink ,  #ffff66); /* Standard syntax */
+    flex: 1 1 auto;
+    height: 25px;
+}
+
+.nav-btn {
+    box-sizing: border-box;
+}
+
+@media (min-width:601px) {
+    nav {
+        justify-content: flex-end;
+    }
+    .nav-btn {
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+.heading-full-width {
+    width:100%;
+}
+
+@media (max-width:600px) {
+    .display-off {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+    }
+    .nav-btn {
+        margin: 5px auto 5px auto; 
+    }
+}
+
+@media (max-width:767px) {
+    main {
+        box-sizing: border-box;
+        margin-left: 15px;
+    }
+}
+
+767
