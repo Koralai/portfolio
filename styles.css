@@ -6,15 +6,17 @@ body {
 p {
     color: #222;
     font-size: 18px;
-}
-
-h2 {
+    line-height:150%;
     font-weight: 300;
 }
 
 h1 {
     line-height:50%;
     color:#ff8c00;
+}
+
+h2 {
+    font-weight: 300;
 }
 
 a {
@@ -26,11 +28,6 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: orange;
     text-decoration-style: double;
-}
-
-p {
-    line-height:150%;
-    font-weight: 300;
 }
 
 .flex-container {
@@ -51,6 +48,10 @@ p {
     box-sizing: border-box;
 }
 
+.heading-full-width {
+    width:100%;
+}
+
 @media (min-width:601px) {
     nav {
         justify-content: flex-end;
@@ -58,10 +59,6 @@ p {
     .nav-btn {
         margin: 10px 20px 10px 20px;
     }
-}
-
-.heading-full-width {
-    width:100%;
 }
 
 @media (max-width:600px) {
@@ -82,5 +79,3 @@ p {
         margin-left: 15px;
     }
 }
-
-767
