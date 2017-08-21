@@ -13,6 +13,7 @@ p {
 h1 {
     line-height:50%;
     color:#ff8c00;
+    text-align: center;
 }
 
 h2 {
@@ -48,8 +49,8 @@ a:hover {
     box-sizing: border-box;
 }
 
-.heading-full-width {
-    width:100%;
+.portrait {
+    border-radius:50%;
 }
 
 @media (min-width:601px) {
@@ -58,6 +59,10 @@ a:hover {
     }
     .nav-btn {
         margin: 10px 20px 10px 20px;
+    }
+    .portrait {
+        float:left;
+        margin:0px 20px 15px 0px;
     }
 }
 
@@ -71,11 +76,15 @@ a:hover {
     .nav-btn {
         margin: 5px auto 5px auto; 
     }
+    .portrait {
+
+    }
 }
 
 @media (max-width:767px) {
     main {
         box-sizing: border-box;
         margin-left: 15px;
+        padding: 0;
     }
 }
