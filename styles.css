@@ -1,3 +1,11 @@
+/* Overriding FlexBox Grid */
+
+.row {
+    margin: 0;
+}
+
+/*Custom styling*/
+
 body {
     margin: 0;
     font-family: 'Oxygen', sans-serif;
@@ -6,13 +14,13 @@ body {
 p {
     color: #222;
     font-size: 18px;
-    line-height:150%;
+    line-height: 150%;
     font-weight: 300;
 }
 
 h1 {
-    line-height:50%;
-    color:#ff8c00;
+    line-height: 50%;
+    color: #ff8c00;
     text-align: center;
 }
 
@@ -50,10 +58,12 @@ a:hover {
 }
 
 .portrait {
-    border-radius:50%;
+    border-radius: 50%;
 }
 
-@media (min-width:601px) {
+/*Responsive display*/
+
+@media (min-width: 601px) {
     nav {
         justify-content: flex-end;
     }
@@ -66,7 +76,7 @@ a:hover {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .display-off {
         display: none;
     }
@@ -79,13 +89,5 @@ a:hover {
     .portrait {
         display: block;
         margin: 0 auto;
-    }
-}
-
-@media (max-width:767px) {
-    main {
-        box-sizing: border-box;
-        margin-left: 15px;
-        padding: 0;
     }
 }
