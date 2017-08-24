@@ -14,7 +14,7 @@ body {
 p {
     color: #222;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 176%;
     font-weight: 300;
 }
 
@@ -39,10 +39,6 @@ a:hover {
     text-decoration-style: double;
 }
 
-.flex-container {
-    display:flex;
-}
-
 .gradient {
     background: #ffff66; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, deeppink , yellow); /* For Safari 5.1 to 6.0 */
@@ -50,7 +46,7 @@ a:hover {
     background: -moz-linear-gradient(right, deeppink, yellow); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right,deeppink ,  #ffff66); /* Standard syntax */
     flex: 1 1 auto;
-    height: 25px;
+    height: 16px;
 }
 
 .nav-btn {
@@ -59,6 +55,29 @@ a:hover {
 
 .portrait {
     border-radius: 50%;
+}
+
+.content {
+    box-sizing: border-box;
+    margin-bottom: 64px;
+}
+
+/*Custom FlexBox settings*/
+
+.flex-container {
+    display:flex;
+}
+
+.work-portfolio {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-screencap {
+    height: 160px;
+    background: pink;
+    margin: 0 8px 16px 8px;
+    flex: 0 0 192px;
 }
 
 /*Responsive display*/
