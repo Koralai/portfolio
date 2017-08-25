@@ -21,10 +21,9 @@ p {
 
 h1 {
     color: #ff8c00;
-    text-align: center;
 }
 
-h2 {
+h2, h3 {
     font-weight: 300;
 }
 
@@ -54,6 +53,33 @@ a:hover {
 
 .portrait {
     border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.top-section {
+    margin: 32px auto 32px auto;
+}
+
+.circle-btn {
+    display: inline-block;
+    border-radius: 50%;
+    background: #ff7980;
+    height: 48px;
+    width: 48px;
+    padding: 4px;
+    font-style: normal;
+    text-align: center;
+    line-height: 48px;
+    transition: background-color 0.2s linear;
+}
+
+.circle-btn i {
+    font-style: normal;
+}
+
+.circle-btn:hover {
+    background-color: #ff4889;
 }
 
 .content {
@@ -79,6 +105,10 @@ a:hover {
     flex: 0 0 240px;
 }
 
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
 /*Responsive display*/
 
 @media (min-width: 601px) {
@@ -87,10 +117,6 @@ a:hover {
     }
     .nav-btn {
         margin: 10px 20px 10px 20px;
-    }
-    .portrait {
-        float:left;
-        margin:0px 20px 15px 0px;
     }
 }
 
@@ -104,8 +130,19 @@ a:hover {
     .nav-btn {
         margin: 5px auto 5px auto; 
     }
+}
+
+@media (max-width: 767px) {
+    .top-section {
+        text-align: center;
+    }
     .portrait {
-        display: block;
-        margin: 0 auto;
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .portrait {
+        margin: auto 32px auto auto;
     }
 }
