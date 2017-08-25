@@ -9,17 +9,17 @@
 body {
     margin: 0;
     font-family: 'Oxygen', sans-serif;
+    letter-spacing: 1px;
 }
 
 p {
     color: #222;
     font-size: 18px;
-    line-height: 176%;
+    line-height: 1.76;
     font-weight: 300;
 }
 
 h1 {
-    line-height: 50%;
     color: #ff8c00;
     text-align: center;
 }
@@ -36,7 +36,6 @@ a {
 a:hover {
     text-decoration: underline;
     text-decoration-color: orange;
-    text-decoration-style: double;
 }
 
 .gradient {
@@ -74,10 +73,10 @@ a:hover {
 }
 
 .work-screencap {
-    height: 160px;
+    height: 176px;
     background: pink;
     margin: 0 8px 16px 8px;
-    flex: 0 0 192px;
+    flex: 0 0 240px;
 }
 
 /*Responsive display*/
@@ -96,7 +95,7 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    .display-off {
+    .xs-display-off {
         display: none;
     }
     nav {
