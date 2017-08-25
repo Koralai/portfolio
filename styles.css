@@ -68,14 +68,16 @@ a:hover {
     height: 48px;
     width: 48px;
     padding: 4px;
+    margin-right: 8px;
     font-style: normal;
     text-align: center;
-    line-height: 48px;
+    line-height: 58px;
     transition: background-color 0.2s linear;
 }
 
 .circle-btn i {
-    font-style: normal;
+    color: #fff;
+    text-shadow: 1px 1px 2px #A54E52;
 }
 
 .circle-btn:hover {
