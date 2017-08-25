@@ -37,6 +37,10 @@ a:hover {
     text-decoration-color: orange;
 }
 
+a.no-underline:hover {
+    text-decoration: none;
+}
+
 .gradient {
     background: #ffff66; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, deeppink , yellow); /* For Safari 5.1 to 6.0 */
