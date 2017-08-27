@@ -125,6 +125,11 @@ small {
     background: pink;
     margin: 0 9px 18px 9px;
     flex: 0 0 240px;
+    box-shadow: 3px 3px 9px #aaa;
+}
+
+.work-screencap:hover {
+    box-shadow: 1px 1px 4px #aaa;
 }
 
 .wrap-reverse {
